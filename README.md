@@ -1,2 +1,2 @@
 # sprint7-proyecto-ivandiaz
-Proyecto del Sprint 7 de Tripleten de Iván Díaz.
+Proyecto Sprint 7 Tripleten de Iván Díaz.
