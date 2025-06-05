@@ -39,3 +39,25 @@ if st.session_state.scatter_visible:
     st.write('Creación de un gráfico de dispersión para odómetro y precio')
     fig_scatter = px.scatter(car_data, x="odometer", y="price")
     st.plotly_chart(fig_scatter, use_container_width=True)
+
+
+st.header('Información estadística de carros (checkbox)')
+car_data = pd.read_csv('vehicles_us.csv')  # leer los datos
+
+# Crear checkbox para mostrar/ocultar histograma
+hist_checkbox = st.checkbox('Mostrar histograma')
+
+# Crear checkbox para mostrar/ocultar gráfico de dispersión
+scatter_checkbox = st.checkbox('Mostrar gráfico de dispersión')
+
+# Mostrar el histograma si el checkbox está marcado
+if hist_checkbox:
+    st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
+    fig_hist = px.histogram(car_data, x="odometer")
+    st.plotly_chart(fig_hist, use_container_width=True)
+
+# Mostrar el gráfico de dispersión si el checkbox está marcado
+if scatter_checkbox:
+    st.write('Creación de un gráfico de dispersión para odómetro y precio')
+    fig_scatter = px.scatter(car_data, x="odometer", y="price")
+    st.plotly_chart(fig_scatter, use_container_width=True)
