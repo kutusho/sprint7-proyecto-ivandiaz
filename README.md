@@ -31,3 +31,6 @@ plotly
 
 ## Licencia
 Este proyecto está bajo la Licencia MIT - consulta el archivo LICENSE.md para más detalles.
+
+## Enlace para ver el proyecto en la nube:
+https://sprint7-proyecto-ivandiaz-vltrz5smnsns26azp6n78u.streamlit.app/
